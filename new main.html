@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Point - Courses</title>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .nav-bar a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .nav-bar button {
+            background-color: #7ed957;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            color: #fff;
+            margin: 0 10px;
+        }
+
+        /* Banner Section */
+        .banner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 100px;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+
+        .banner img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Course Section */
+        .course-section {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #fff;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .card h2 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .card p {
+            font-size: 14px;
+            margin: 10px 0;
+        }
+
+        .card .register-now {
+            background-color: #7ed957;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Contact Section */
+        .contacts {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 40px;
+            background-color: #f4f4f9;
+        }
+
+        .contacts h2 {
+            margin-bottom: 10px;
+        }
+
+        .contacts div {
+            text-align: center;
+            margin: 10px;
+        }
+
+        .line {
+            width: 1px;
+            height: auto;
+            background-color: #ccc;
+            margin: 0 20px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <img src="./assests/icon.png" alt="Logo" width="100px">
+        <button class="button-catogories"><a href="#course">Courses</a></button>
+        <div class="Search">
+            <input type="text" placeholder="Enter the course..." class="Search-bar">
+            <button class="Search-button">Search</button>
+        </div>
+        <button class="nav-login-button"><a href="./Login.html">Login</a></button>
+        <button class="Signup"><a href="./Signup.html">Signup</a></button>
+    </div>
+
+    <!-- Banner Section -->
+    <div class="banner">
+        <img src="./assests/LEARNING WHILE.png" alt="Banner">
+    </div>
+
+    <!-- Course Section -->
+    <div class="course-section">
+        <h1 id="course">Courses</h1>
+        <h2>For your Career Growth</h2>
+    </div>
+
+    <!-- Cards Section -->
+    <div class="cards">
+        <div class="card">
+            <img src="./assests/ai.jpg" alt="AI">
+            <h2>Artificial Intelligence (AI)</h2>
+            <p>Artificial Intelligence (AI) refers to the development of computer systems capable of performing tasks that typically require human intelligence.</p>
+            <a href="./Artificial Intelligence.html"><button class="register-now">Register now &rarr;</button></a>
+        </div>
+        <div class="card">
+            <img src="./assests/What-is-Cloud-Computing.jpeg" alt="Cloud Computing">
+            <h2>Cloud Computing</h2>
+            <p>Cloud Computing is the delivery of computing services over the internet, including servers, storage, and analytics.</p>
+            <a href="./Cloud Computing.html"><button class="register-now">Register now &rarr;</button></a>
+        </div>
+        <div class="card">
+            <img src="./assests/blockchain-uses-cryptocurrency.jpg" alt="Blockchain">
+            <h2>Blockchain Technology</h2>
+            <p>Blockchain Technology is a decentralized, distributed ledger system that records transactions securely and immutably.</p>
+            <a href="./Blockchain Technology.html"><button class="register-now">Register now &rarr;</button></a>
+        </div>
+        <div class="card">
+            <img src="./assests/images.jpg" alt="UX/UI Design">
+            <h2>UX/UI Design</h2>
+            <p>UX/UI Design focuses on enhancing user experiences through intuitive and aesthetically pleasing interfaces.</p>
+            <a href="./UI Design.html"><button class="register-now">Register now &rarr;</button></a>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contacts">
+        <div>
+            <h1>Skill Point</h1>
+            <div class="contactus">
+                <img src="./assests/mail.png" alt="Mail" width="50px">
+                <button class="contactus-button">Contact us</button>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="contact">
+            <h2>Contacts</h2>
+            <p>Ph: +91 292238939</p>
+            <h2>Address</h2>
+            <p>Skillpoint Research Park,<br>3rd floor, D block,<br>Chennai, Tamil Nadu</p>
+        </div>
+        <div class="line"></div>
+        <div class="followus">
+            <h2>Follow Us</h2>
+            <div><img src="./assests/insta_icon.svg" alt="Instagram"><p>Instagram</p></div>
+            <div><img src="./assests/twitter_icon.svg" alt="Twitter"><p>Twitter</p></div>
+            <div><img src="./assests/in_icon.svg" alt="LinkedIn"><p>LinkedIn</p></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; All rights reserved by Skillpoint.</p>
+    </footer>
+</body>
+</html>
